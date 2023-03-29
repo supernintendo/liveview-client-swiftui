@@ -192,6 +192,7 @@ struct BuiltinRegistry: BuiltinRegistryProtocol {
         case monospacedDigit = "monospaced_digit"
         case navigationTitle = "navigation_title"
         case offset
+        case opacity
         case padding
         case renameAction = "rename_action"
         case statusBarHidden = "status_bar_hidden"
@@ -241,6 +242,8 @@ struct BuiltinRegistry: BuiltinRegistryProtocol {
             try NavigationTitleModifier(from: decoder)
         case .offset:
             try OffsetModifier(from: decoder)
+        case .opacity:
+            try OpacityModifier(from: decoder)
         case .padding:
             try PaddingModifier(from: decoder)
         case .renameAction:
