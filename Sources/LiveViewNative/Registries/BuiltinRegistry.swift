@@ -192,6 +192,7 @@ struct BuiltinRegistry: BuiltinRegistryProtocol {
         case navigationTitle = "navigation_title"
         case padding
         case renameAction = "rename_action"
+        case statusBarHidden = "status_bar_hidden"
         case tag
         case textCase = "text_case"
         case tint
@@ -238,6 +239,8 @@ struct BuiltinRegistry: BuiltinRegistryProtocol {
             try PaddingModifier(from: decoder)
         case .renameAction:
             try RenameActionModifier(from: decoder)
+        case .statusBarHidden:
+            try StatusBarHiddenModifier(from: decoder)
         case .tag:
             try TagModifier(from: decoder)
         case .textCase:

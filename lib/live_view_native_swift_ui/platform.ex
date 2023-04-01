@@ -39,6 +39,7 @@ defmodule LiveViewNativeSwiftUi.Platform do
           monospaced_digit: Modifiers.MonospacedDigit,
           navigation_title: Modifiers.NavigationTitle,
           padding: Modifiers.Padding,
+          status_bar_hidden: Modifiers.StatusBarHidden,
           tag: Modifiers.Tag,
           text_case: Modifiers.TextCase,
           tint: Modifiers.Tint,
