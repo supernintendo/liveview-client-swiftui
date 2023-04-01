@@ -176,6 +176,7 @@ struct BuiltinRegistry: BuiltinRegistryProtocol {
         case aspectRatio = "aspect_ratio"
         case backgroundStyle = "background_style"
         case bold
+        case dynamicTypeSize = "dynamic_type_size"
         case fontWeight = "font_weight"
         case foregroundStyle = "foreground_style"
         case frame
@@ -204,6 +205,8 @@ struct BuiltinRegistry: BuiltinRegistryProtocol {
             try BackgroundStyleModifier(from: decoder)
         case .bold:
             try BoldModifier(from: decoder)
+        case .dynamicTypeSize:
+            try DynamicTypeSizeModifier(from: decoder)
         case .foregroundStyle:
             try ForegroundStyleModifier(from: decoder)
         case .fontWeight:
