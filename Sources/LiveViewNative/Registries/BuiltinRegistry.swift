@@ -193,6 +193,7 @@ struct BuiltinRegistry: BuiltinRegistryProtocol {
         case padding
         case renameAction = "rename_action"
         case tag
+        case textCase = "text_case"
         case tint
     }
     
@@ -239,6 +240,8 @@ struct BuiltinRegistry: BuiltinRegistryProtocol {
             try RenameActionModifier(from: decoder)
         case .tag:
             try TagModifier(from: decoder)
+        case .textCase:
+            try TextCaseModifier(from: decoder)
         case .tint:
             try TintModifier(from: decoder)
         }
