@@ -35,6 +35,7 @@ defmodule LiveViewNativeSwiftUi.Platform do
           list_row_insets: Modifiers.ListRowInsets,
           list_row_separator: Modifiers.ListRowSeparator,
           monospaced: Modifiers.Monospaced,
+          monospaced_digit: Modifiers.MonospacedDigit,
           navigation_title: Modifiers.NavigationTitle,
           padding: Modifiers.Padding,
           tag: Modifiers.Tag,
