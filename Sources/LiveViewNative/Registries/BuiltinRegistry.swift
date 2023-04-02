@@ -186,6 +186,7 @@ struct BuiltinRegistry: BuiltinRegistryProtocol {
         case italic
         case listRowInsets = "list_row_insets"
         case listRowSeparator = "list_row_separator"
+        case monospaced
         case navigationTitle = "navigation_title"
         case padding
         case renameAction = "rename_action"
@@ -222,6 +223,8 @@ struct BuiltinRegistry: BuiltinRegistryProtocol {
             try ListRowInsetsModifier(from: decoder)
         case .listRowSeparator:
             try ListRowSeparatorModifier(from: decoder)
+        case .monospaced:
+            try MonospacedModifier(from: decoder)
         case .navigationTitle:
             try NavigationTitleModifier(from: decoder)
         case .padding:

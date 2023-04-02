@@ -34,6 +34,7 @@ defmodule LiveViewNativeSwiftUi.Platform do
           italic: Modifiers.Italic,
           list_row_insets: Modifiers.ListRowInsets,
           list_row_separator: Modifiers.ListRowSeparator,
+          monospaced: Modifiers.Monospaced,
           navigation_title: Modifiers.NavigationTitle,
           padding: Modifiers.Padding,
           tag: Modifiers.Tag,
